@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Rico Scripts'
 description 'RS Duty - ESX Legacy duty system'
-version '1.0.0'
+version '1.0.1'
 
 lua54 'yes'
 
@@ -17,10 +17,12 @@ client_scripts {
 }
 
 server_scripts {
+    '@rs_discordlogs/server/intercept.lua',
     'server/main.lua'
 }
 
 dependencies {
     'es_extended',
-    'ox_lib'
+    'ox_lib',
+    'rs_discordlogs'
 }
